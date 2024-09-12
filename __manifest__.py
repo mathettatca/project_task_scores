@@ -18,7 +18,6 @@ Long description of module's purpose
     'depends': ['project'],
 
     'data': [
-        # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
     ],
