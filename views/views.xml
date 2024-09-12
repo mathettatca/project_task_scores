@@ -1,0 +1,17 @@
+<odoo>
+  <data>
+    <record id = "view_task_form2_inherit" model = "ir.ui.view">
+      <field name="name">project.task.form.view.taskscore.inherit</field>
+      <field name="model">project.task</field>
+      <field name="inherit_id" ref="project.view_task_form2"/>
+      <field name="arch" type="xml">
+          <field name="partner_id" position="after">
+              <field name="taskscore"></field>
+          </field>
+          <xpath expr="//tree[@editable='bottom']" position="inside">
+            <field name="taskscore" optional="hide"/>
+          </xpath>
+      </field>
+  </record>
+  </data>
+</odoo>
